@@ -104,6 +104,19 @@ function Hero() {
             Learn More
           </a>
         </div>
+
+        <div className="relative mx-auto mt-16 max-w-5xl">
+          <div className="overflow-hidden rounded-2xl border border-border/50 shadow-2xl shadow-accent/10">
+            <Image
+              src="/demo.png"
+              alt="Sovereign chat interface demo"
+              width={1920}
+              height={1080}
+              className="w-full"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
