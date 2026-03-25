@@ -418,7 +418,28 @@ function Footer() {
     <footer className="border-t border-border/50 py-8">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 text-sm text-muted">
         <span>Sovereign</span>
-        <span>Open source under MIT</span>
+        <div className="flex items-center gap-6">
+          <a
+            href="/terms"
+            className="transition-colors hover:text-foreground"
+          >
+            Terms
+          </a>
+          <a
+            href="/privacy"
+            className="transition-colors hover:text-foreground"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://github.com/tgsovereign/core/blob/main/LICENSE"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            Open source under MIT
+          </a>
+        </div>
       </div>
     </footer>
   );
