@@ -1,3 +1,4 @@
+import Image from "next/image";
 import {
   MessageSquare,
   Search,
@@ -26,7 +27,10 @@ function Navbar() {
   return (
     <nav className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-lg">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <span className="text-xl font-bold tracking-tight">Sovereign</span>
+        <span className="flex items-center gap-2 text-xl font-bold tracking-tight">
+          <Image src="/logo.svg" alt="Sovereign" width={28} height={28} />
+          Sovereign
+        </span>
         <div className="hidden items-center gap-8 text-sm text-muted sm:flex">
           <a
             href="#features"
@@ -45,7 +49,7 @@ function Navbar() {
           </a>
         </div>
         <a
-          href="https://github.com/sovereign"
+          href="https://github.com/tgsovereign/core"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-2 rounded-lg border border-border px-4 py-2 text-sm font-medium transition-colors hover:bg-surface"
@@ -85,7 +89,7 @@ function Hero() {
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://github.com/sovereign"
+            href="https://github.com/tgsovereign/core"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-12 items-center gap-2 rounded-xl bg-accent px-8 text-sm font-semibold text-white transition-all hover:bg-accent-light hover:shadow-lg hover:shadow-accent/25"
@@ -360,7 +364,7 @@ function CTA() {
         </p>
         <div className="mt-8 flex justify-center">
           <a
-            href="https://github.com/sovereign"
+            href="https://github.com/tgsovereign/core"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-12 items-center gap-2 rounded-xl bg-accent px-8 text-sm font-semibold text-white transition-all hover:bg-accent-light hover:shadow-lg hover:shadow-accent/25"
