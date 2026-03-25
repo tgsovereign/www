@@ -13,6 +13,8 @@ import {
   Server,
   ArrowRight,
   Zap,
+  Terminal,
+  Play,
 } from "lucide-react";
 
 function GitHubIcon({ className }: { className?: string }) {
@@ -89,19 +91,21 @@ function Hero() {
         </p>
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <a
-            href="https://github.com/tgsovereign/core"
+            href="https://web.tgsovereign.com"
             target="_blank"
             rel="noopener noreferrer"
             className="flex h-12 items-center gap-2 rounded-xl bg-accent px-8 text-sm font-semibold text-white transition-all hover:bg-accent-light hover:shadow-lg hover:shadow-accent/25"
           >
-            Get Started
+            Try It Free
             <ArrowRight className="h-4 w-4" />
           </a>
           <a
-            href="#features"
+            href="https://github.com/tgsovereign/core"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex h-12 items-center rounded-xl border border-border px-8 text-sm font-medium text-muted transition-colors hover:border-muted hover:text-foreground"
           >
-            Learn More
+            Host It Yourself
           </a>
         </div>
 
@@ -335,6 +339,24 @@ function Architecture() {
               </code>
             </pre>
           </div>
+          <a
+            href="https://github.com/tgsovereign/core"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group mt-4 flex items-center justify-between rounded-xl border border-border/50 bg-surface/50 px-4 py-3 transition-colors hover:border-accent/50"
+          >
+            <div className="flex items-center gap-3">
+              <Terminal className="h-4 w-4 text-accent-light" />
+              <code className="text-sm text-muted">
+                <span className="text-accent-light">$</span> docker compose
+                up --build
+              </code>
+            </div>
+            <span className="flex items-center gap-1.5 text-xs font-medium text-muted transition-colors group-hover:text-accent-light">
+              Run
+              <Play className="h-3 w-3" />
+            </span>
+          </a>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
               {
